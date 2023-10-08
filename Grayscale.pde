@@ -1,11 +1,5 @@
-int binaryIndex = 0;
-float grayScaleStep;
-
 void setup() {
   size(5000, 5000);
-
-
-  background (255);
   String[] lines = loadStrings("binaryData.txt");
   String binaryString = join(lines, ""); 
   float[] binaryData = new float[binaryString.length()];
