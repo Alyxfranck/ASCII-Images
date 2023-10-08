@@ -30,7 +30,7 @@ void draw(float[] binaryData) {
 
     // Apply transparency with a random chance
     float chance = random(1);
-    if (chance < 0.05) {
+    if (chance < 0.3) {
       fill(grayScaleValue, 127); 
     } else {
       noFill();
