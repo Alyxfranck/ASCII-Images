@@ -4,22 +4,16 @@ Binary Melodies is an exploration of randomness in digital art. Using Processing
 
 ## How it works
 
-The programs require a binary data text file as input. This data represents the translated song lyrics. The programs read this binary data from the text file and interpret it to generate a unique visual representation on a canvas. 
+The programs require a binary data text file as input. This data represents the translated song lyrics or any kind of text. The programs read this binary data from the text file and interpret it to generate a unique visual representation on a canvas. 
 
 The specific mechanism for translating the binary data into visual representation varies by program, but each leverages the inherent structure of the binary data to inform the generated visual.
 
-The output of each program is a grayscale image representing the binary data, saved as a JPEG file.
-
 ## Installation
 
-- Install [Processing 4](https://processing.org/download/).
-- Clone this [repository](https://github.com/Alyxfranck/Binarymelodies.git). 
-- Add a binary data text file to the project. You can use [Text to Binary](https://www.rapidtables.com/convert/number/ascii-to-binary.html) for this. 
-- Open the `.pde` file in the Processing IDE and run the sketch.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+- Install [Processing 4](https://processing.org/download/)
+- Clone this [repository](https://github.com/Alyxfranck/Binarymelodies.git)
+- Add a binary data text file to the project. You can use [Text to Binary](https://www.rapidtables.com/convert/number/ascii-to-binary.html) for this 
+- Open the `.pde` file in the Processing IDE and run the sketch
 
 ## License
 
