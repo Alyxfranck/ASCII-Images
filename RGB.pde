@@ -11,11 +11,11 @@ void setup() {
 
   drawCurvesFromBinary(binaryData);
 
-  save("uniqueoutput.jpg");
+  save("output.jpg");
 }
 
     
-void drawCurvesFromBinary(float[] binaryData) {
+void draw(float[] binaryData) {
   noFill();
   beginShape();
 
