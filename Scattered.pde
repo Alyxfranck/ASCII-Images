@@ -1,7 +1,3 @@
- int binaryIndex = 0;
-float colorStep;
-
-
 void setup() {
   size(5000, 5000);
   String[] lines = loadStrings("binaryData.txt");
@@ -11,11 +7,10 @@ void setup() {
     binaryData[i] = binaryString.charAt(i) == '0' ? 0 : 1;
   }
   
-  // Generiere einen Seed basierend auf den binären Daten
- long seed = binaryString.hashCode();
- randomSeed(seed); // Initialisiere den Zufallsgenerator mit dem Seed
-  
-    
+ 
+  long seed = binaryString.hashCode();
+  randomSeed(seed); 
+
   draw(binaryData);
   
   save("output.png");
@@ -37,15 +32,13 @@ void draw(float[] binaryData) {
     float cy2 = binaryToDecimal(binaryData, i + 72, 8) / 255.0 * width;
 
     float chance = random(1);
-    if (chance < 0.1) { // 10% chance to apply color
+    if (chance < 0.3) { // 30% chance to apply color
       fill(r, g, b, 127); // fill color with transparency
     } else {
-      noFill(); // no fill for grayscale curves
+      noFill(); 
     }
     
     stroke(0);
-    
-   
     bezier(x1, y1, cx1, cy1, cx2, cy2, x1, y1);
   
 }
