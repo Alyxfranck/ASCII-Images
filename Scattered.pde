@@ -13,7 +13,7 @@ void setup() {
 
   draw(binaryData);
   
-  save("output.png");
+  save("output.jpg");
 }
 
 void draw(float[] binaryData) {
