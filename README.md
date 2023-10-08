@@ -13,7 +13,7 @@ The output of each program is a grayscale image representing the binary data, sa
 ## Installation
 
 - Install [Processing 4](https://processing.org/download/).
-- Clone this [repository](https://github.com/Alyxfranck/Binarymelodies). 
+- Clone this [repository](https://github.com/Alyxfranck/Binarymelodies.git). 
 - Add a binary data text file to the project. You can use [Text to Binary](https://www.rapidtables.com/convert/number/ascii-to-binary.html) for this. 
 - Open the `.pde` file in the Processing IDE and run the sketch.
 
