@@ -13,9 +13,8 @@ void setup() {
     binaryData[i] = binaryString.charAt(i) == '0' ? 0 : 1;
   }
  
-  // Generiere einen Seed basierend auf den binären Daten
  long seed = binaryString.hashCode();
- randomSeed(seed); // Initialisiere den Zufallsgenerator mit dem Seed
+ randomSeed(seed); 
  
   grayScaleStep = 255.0/(binaryData.length * 0.4 );
   draw(binaryData);
