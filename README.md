@@ -1,6 +1,6 @@
 # Binary Melodies
 
-Binary Melodies is an exploration of randomness in digital art. Using Processing 4, this project converts song lyrics into visual images by translating them into binary and using the binary to create the images. Each program or sketch within this repository works in a similar manner.
+Binary Melodies is an exploration of randomness in digital art. Using Processing 4, this project converts song lyrics into visual images by translating them into binary and using the binary to create the images. Each program or sketch within this repository works similarly.
 
 ## How it works
 
@@ -13,7 +13,7 @@ The output of each program is a grayscale image representing the binary data, sa
 ## Installation
 
 - Install [Processing 4](https://processing.org/download/).
-- Clone this repository:[](https://github.com/Alyxfranck/Binarymelodies). 
+- Clone this repository:[Clone](https://github.com/Alyxfranck/Binarymelodies). 
 - Add a binary data text file to the project.
 - Open the `.pde` file in the Processing IDE and run the sketch.
 
