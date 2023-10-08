@@ -4,7 +4,7 @@ float grayScaleStep;
 void setup() {
   size(5000, 5000);
 
-  // Use a constant seed for the random number generator
+
   background (255);
   String[] lines = loadStrings("binaryData.txt");
   String binaryString = join(lines, ""); 
@@ -18,13 +18,13 @@ void setup() {
  randomSeed(seed); // Initialisiere den Zufallsgenerator mit dem Seed
  
   grayScaleStep = 255.0/(binaryData.length * 0.4 );
-  drawCurvesFromBinary(binaryData);
+  draw(binaryData);
 
   save("output.jpg");
 }
 
     
-void drawCurvesFromBinary(float[] binaryData) {
+void draw(float[] binaryData) {
   noFill();
   beginShape();
 
