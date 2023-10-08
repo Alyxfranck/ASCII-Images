@@ -1,7 +1,6 @@
 void setup() {
   size(5000, 5000);
-  randomSeed(123); // Use a constant seed for the random number generator
-
+  
   String[] lines = loadStrings("Bound2.txt");
   String binaryString = join(lines, ""); 
   float[] binaryData = new float[binaryString.length()];
@@ -9,7 +8,10 @@ void setup() {
     binaryData[i] = binaryString.charAt(i) == '0' ? 0 : 1;
   }
 
-  drawCurvesFromBinary(binaryData);
+  long seed = binaryString.hashCode();
+  randomSeed(seed); 
+  
+  draw(binaryData);
 
   save("output.jpg");
 }
