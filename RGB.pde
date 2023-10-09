@@ -1,7 +1,7 @@
 void setup() {
   size(5000, 5000);
   
-  String[] lines = loadStrings("Bound2.txt");
+  String[] lines = loadStrings("binaryData.txt");
   String binaryString = join(lines, ""); 
   float[] binaryData = new float[binaryString.length()];
   for (int i = 0; i < binaryData.length; i++) {
