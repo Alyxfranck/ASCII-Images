@@ -22,14 +22,14 @@ void draw(float[] binaryData) {
 
  for (int i = 0; i < binaryData.length - 72; i += 72) { // 72 bits at a time
     float x1 = binaryToDecimal(binaryData, i, 8) / 255.0 * width; // Start/End x
-    float y1 = binaryToDecimal(binaryData, i + 16, 8) / 255.0 * height;// Start/End y 
-    int r = round(binaryToDecimal(binaryData, i + 24, 8)); 
-    int g = round(binaryToDecimal(binaryData, i + 32, 8)); 
-    int b = round(binaryToDecimal(binaryData, i + 40, 8)); 
-    float cx1 = binaryToDecimal(binaryData, i + 48, 8) / 255.0 * height; 
-    float cx2 = binaryToDecimal(binaryData, i + 56, 8) / 255.0 * height; 
-    float cy1 = binaryToDecimal(binaryData, i + 64, 8) / 255.0 * width; 
-    float cy2 = binaryToDecimal(binaryData, i + 72, 8) / 255.0 * width;
+    float y1 = binaryToDecimal(binaryData, i + 8, 8) / 255.0 * height;// Start/End y 
+    int r = round(binaryToDecimal(binaryData, i + 16, 8)); 
+    int g = round(binaryToDecimal(binaryData, i + 24, 8)); 
+    int b = round(binaryToDecimal(binaryData, i + 32, 8)); 
+    float cx1 = binaryToDecimal(binaryData, i + 40, 8) / 255.0 * height; 
+    float cx2 = binaryToDecimal(binaryData, i + 48, 8) / 255.0 * height; 
+    float cy1 = binaryToDecimal(binaryData, i + 56, 8) / 255.0 * width; 
+    float cy2 = binaryToDecimal(binaryData, i + 64, 8) / 255.0 * width;
 
     float chance = random(1);
     if (chance < 0.3) { // 30% chance to apply color
