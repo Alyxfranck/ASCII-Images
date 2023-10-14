@@ -21,7 +21,7 @@ void draw(float[] binaryData) {
   noFill();
   beginShape();
 
-  for (int i = 0; i < binaryData.length - 48; i += 48) { // 48 bits at a time
+  for (int i = 0; i < binaryData.length - 56; i += 56) { // 56 bits at a time
     float x1 = binaryToDecimal(binaryData, i, 8) / 255.0 * width; // convert first 8 bits to decimal and use as x1
     float y1 = binaryToDecimal(binaryData, i + 8, 8) / 255.0 * height; // convert next 8 bits to decimal and use as y1
     int r = round(binaryToDecimal(binaryData, i + 16, 8)); // convert next 8 bits to decimal and use as red value
