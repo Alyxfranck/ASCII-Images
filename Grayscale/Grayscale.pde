@@ -21,7 +21,7 @@ void draw(float[] binaryData) {
   noFill();
   beginShape();
 
-  for (int i = 0; i < binaryData.length - 32; i += 32) { // 32 bits at a time
+    for (int i = 0; i < binaryData.length - 40; i += 40) { // 40 bits at a time
     float x1 = binaryToDecimal(binaryData, i, 8) / 255.0 * width; // convert first 8 bits to decimal and use as x1
     float y1 = binaryToDecimal(binaryData, i + 8, 8) / 255.0 * height; // convert next 8 bits to decimal and use as y1
     int grayScaleValue = round(binaryToDecimal(binaryData, i + 16, 8)); // convert next 8 bits to decimal and use as grayscale value
