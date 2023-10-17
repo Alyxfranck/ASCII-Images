@@ -20,7 +20,7 @@ void draw(float[] binaryData) {
   noFill();
   beginShape();
 
- for (int i = 0; i < binaryData.length - 72; i += 72) { // 72 bits at a time
+ for (int i = 0; i < binaryData.length - 72; i += 300) { // 72 bits at a time
     float x1 = binaryToDecimal(binaryData, i, 8) / 255.0 * width; // Start/End x
     float y1 = binaryToDecimal(binaryData, i + 8, 8) / 255.0 * height;// Start/End y 
     int r = round(binaryToDecimal(binaryData, i + 16, 8)); 
