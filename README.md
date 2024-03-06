@@ -1,4 +1,4 @@
-# Binary Melodies
+# ASCII-Images
 
 Binary Melodies is an exploration of randomness in digital art. Using Processing 4, this project converts song lyrics into visual images by translating them into binary and using the binary to create the images. Each program or sketch within this repository works similarly.
 
